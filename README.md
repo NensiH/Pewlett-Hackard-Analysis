@@ -3,14 +3,14 @@
 The purpose of this analysis is to address the aging workforce at Pewlett Hackard. Bobby's manager has given two assignments to determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. This detailed Analysis report will help  Bobby’s manager for the “silver tsunami” as many current employees reach retirement age.
 
 ## Resources
-- Data Source: 
+### Data Source: 
   - [departments.csv](https://github.com/NensiH/Pewlett-Hackard-Analysis/blob/main/Data/departments.csv)
   - [employees.csv](https://github.com/NensiH/Pewlett-Hackard-Analysis/blob/main/Data/employees.csv)
   - [dept_manager.csv](https://github.com/NensiH/Pewlett-Hackard-Analysis/blob/main/Data/dept_manager.csv)
   - [dept_emp.csv](https://github.com/NensiH/Pewlett-Hackard-Analysis/blob/main/Data/dept_emp.csv)
   - [salaries.csv](https://github.com/NensiH/Pewlett-Hackard-Analysis/blob/main/Data/salaries.csv)
   - [titles.csv](https://github.com/NensiH/Pewlett-Hackard-Analysis/blob/main/Data/titles.csv)
-- Software: 
+### Software: 
   - PostgreSQL 11.9
   - pgAdmin 4
 
@@ -24,11 +24,11 @@ Pewlett Hackard currently stores their employee data in 6 different csv files. H
 
 **1. The Number of Retiring Employees by Title**
 
-To determine the number of employees approaching retirement eligibility, We have created a new table which contains duplicate data in employee name column as many employees have changed their titles during their career. By using DISTINCT ON function, here is the data with most recent job title for each employee(No duplicate data):
+To determine the number of employees approaching retirement eligibility, We have created a new table which contains duplicate data in employee name column as many employees have changed their titles during their career. By using DISTINCT ON function, here is the data with most recent job title for each employee(No duplicate data): [unique_titles.csv](https://raw.githubusercontent.com/NensiH/Pewlett-Hackard-Analysis/main/Data/unique_titles.csv)
 
 <img width="475" alt="Screen Shot 2021-12-02 at 10 19 17 PM" src="https://user-images.githubusercontent.com/92277581/144544609-976cdbca-97f9-4a6f-9e50-634082c5cc45.png">
 
-With the data from this table, we were able to retrieve the number of employees by most recent job title that were about to retire. Here is The retiring_titles table with counts of employee retiring:
+With the data from this table, we were able to retrieve the number of employees by most recent job title that were about to retire. Here is The [retiring_titles.csv](https://github.com/NensiH/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.csv) table with counts of employee retiring:
 
 
 <img width="209" alt="Screen Shot 2021-12-02 at 10 41 51 AM" src="https://user-images.githubusercontent.com/92277581/144464957-57d3229d-1ff3-4b5a-9516-5402dc6a1a7d.png">
@@ -47,7 +47,7 @@ With the data from this table, we were able to retrieve the number of employees 
 
 **2. The Employees Eligible for the Mentorship**
 
-Next, we were asked to find employees that are eligible to participate in PH's mentorship program. The goal of this program is to train star employees to fill the positions of retiring employees. Here is the data as per the mentorship_eligibility table:
+Next, we were asked to find employees that are eligible to participate in PH's mentorship program. The goal of this program is to train star employees to fill the positions of retiring employees. Here is the data as per the [mentorship_eligibilty.csv](https://github.com/NensiH/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_eligibilty.csv) :
 
 <img width="709" alt="Screen Shot 2021-12-02 at 10 33 26 PM" src="https://user-images.githubusercontent.com/92277581/144545778-c810c099-52f3-493c-baac-dcae5b76336a.png">
 
