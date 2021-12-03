@@ -6,7 +6,7 @@ create table departments(
      UNIQUE (dept_name)
 );
 select * from departments;
-
+-- Creating tables for PH-EmployeeDB
 CREATE TABLE employees (
 	emp_no INT NOT NULL,
      birth_date DATE NOT NULL,
@@ -50,5 +50,5 @@ title varchar NOT NULL,
 from_date date NOT NULL,
 to_date date NOT NULL,
 FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
-  PRIMARY KEY (emp_no,title, from_date)
+  
 );
