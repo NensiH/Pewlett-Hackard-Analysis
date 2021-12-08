@@ -24,7 +24,7 @@ Pewlett Hackard currently stores their employee data in 6 different csv files. H
 
 **1. The Number of Retiring Employees by Title**
 
-To determine the number of employees approaching retirement eligibility, We have created a new table which contains duplicate data in employee name column as many employees have changed their titles during their career. By using DISTINCT ON function, here is the data with most recent job title for each employee(No duplicate data): [unique_titles.csv](https://raw.githubusercontent.com/NensiH/Pewlett-Hackard-Analysis/main/Data/unique_titles.csv)
+To determine the number of employees approaching retirement eligibility, We have created a new table [retirement_titles.csv](https://raw.githubusercontent.com/NensiH/Pewlett-Hackard-Analysis/main/Data/retirement_titles.csv) which contains duplicate data in employee name column as many employees have changed their titles during their career. By using DISTINCT ON function, here is the data with most recent job title for each employee(No duplicate data): [unique_titles.csv](https://raw.githubusercontent.com/NensiH/Pewlett-Hackard-Analysis/main/Data/unique_titles.csv)
 
 <img width="475" alt="Screen Shot 2021-12-02 at 10 19 17 PM" src="https://user-images.githubusercontent.com/92277581/144544609-976cdbca-97f9-4a6f-9e50-634082c5cc45.png">
 
